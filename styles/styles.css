@@ -1,0 +1,43 @@
+.page {
+    font-family: Arial, sans-serif;
+}
+
+.header__title {
+    color: red;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.card, .button, .icons, .colors, .fonts {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.button__responsive, .button__mobile {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button__responsive {
+    background-color: gray;
+    color: white;
+}
+
+.button__mobile {
+    background-color: grey;
+    color: white;
+}
+
+.icons__other, .icons__icons {
+    margin-top: 10px;
+}
+
+.footer__text {
+    font-size: 14px;
+}
