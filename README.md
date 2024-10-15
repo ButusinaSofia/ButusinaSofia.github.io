@@ -1,2 +1,2 @@
 # ButusinaSofia.github.io
-project
+front-end project
