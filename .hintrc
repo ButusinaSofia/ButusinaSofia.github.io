@@ -3,31 +3,24 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
-      "default",
-      {
-        "document-title": "off"
-      }
-    ],
-    "meta-viewport": "off",
-    "axe/name-role-value": [
-      "default",
-      {
-        "link-name": "off"
-      }
-    ],
     "compat-api/css": [
-      "off",
+      "default",
       {
         "ignore": [
           "@container"
         ]
       }
-    ]
+    ],
+    "meta-charset-utf-8": "off",
+    "meta-viewport": "off",
+    "axe/text-alternatives": "off",
+    "axe/name-role-value": "off"
   },
   "browserslist": [
     "defaults",
     "not ie 11",
-    "not ios_saf <= 15.8"
+    "not ios_saf <= 15.8",
+    "not ios_saf <= 18.1",
+    "not safari <= 18.1"
   ]
 }

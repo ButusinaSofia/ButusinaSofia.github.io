@@ -3,17 +3,20 @@
     width: 405px;
     max-width: 100%;
     min-width: 280px;
+
     &__link {
         display: flex;
         flex-direction: column;
         text-decoration: none;
         width: 100%;
         color: @black;
-        &:hover .event-card__title{
+
+        &:hover .event-card__title {
             color: @red;
             text-decoration-color: @red;
         }
     }
+
     &__picture {
         display: block;
         width: 100%;
@@ -22,6 +25,7 @@
         font-size: 0px;
         text-decoration: none;
         position: relative;
+
         &::after {
             content: "";
             display: block;
@@ -29,6 +33,7 @@
             padding-top: 107.16%;
         }
     }
+
     &__img {
         position: absolute;
         top: 0;
@@ -37,6 +42,7 @@
         height: 100%;
         object-fit: cover;
     }
+
     &__title {
         margin: 0 0 15px;
         min-height: 66px;
@@ -46,13 +52,30 @@
         color: @black;
         text-decoration: underline transparent;
         transition: color 0.2s, text-decoration 0.2s;
+
+        @media @bw1660 {
+            margin: 0 0 10px;
+        }
+
+        @media @bw1020 {
+            min-height: 21px;
+            font-size: 16px;
+            line-height: 21px;
+        }
     }
+
     &__text {
         margin: 0 0 auto;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.3;
+
+        @media @bw1020 {
+            font-size: 14px;
+            line-height: 19px;
+        }
     }
+
     &__time {
         font-size: 15px;
         display: block;

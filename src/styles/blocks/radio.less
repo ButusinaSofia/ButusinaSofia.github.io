@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+
     &__item {
         box-sizing: border-box;
         position: relative;
@@ -14,18 +15,22 @@
         padding-left: 23px;
         color: @black;
         cursor: pointer;
+
         &:last-child {
             margin-bottom: 0;
-          }
+        }
     }
+
     &__input {
         .is-hidden();
+
         &:checked {
-            & ~ .radio__marker {
+            &~.radio__marker {
                 background-color: @black;
             }
         }
     }
+
     &__marker {
         box-sizing: border-box;
         display: block;
@@ -41,6 +46,7 @@
         background-color: transparent;
         transition: background-color 0.2s;
     }
+
     &__label {
         margin-left: 20px;
         font-weight: 400;
