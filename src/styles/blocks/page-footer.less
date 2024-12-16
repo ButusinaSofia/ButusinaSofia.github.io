@@ -1,115 +1,127 @@
-.page-footer {
+.page-footer{
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: @gray;
 
-    .container;
-    padding-bottom: 75px;
-
-    @media @bw1170 {
-        padding-bottom: 60px;
-    }
-
-    @media @bw600 {
-        padding-bottom: 60px;
-    }
-
-    &__liners {
-        margin-top: 140px;
+    &__first {
+        box-sizing: border-box;
         display: flex;
-        margin-bottom: 60px;
-        gap: 100px;
+        flex-direction: row;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
-        @media @bw1660 {
-            gap: 90px;
-        }
+    &__line {
+        height: 2px;
+        width: 618px;
+        margin-right: 50px;
+        background-color: rgba(28, 27, 27, 1);
 
-        @media @bw1020 {
-            gap: 50px;
-        }
-
-        &::before,
-        &::after {
-            content: '';
-            flex-grow: 1;
-            width: 2px;
-            height: 2px;
-        }
-
-        &::before {
-            background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
-
-
-        }
-
-        &::after {
-            background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 100%);
+        &:last-child {
+            margin-right: 0;
         }
     }
 
-    &__block1 {
+    &__container,
+    &__buttons {
+        box-sizing: border-box;
         display: flex;
-        gap: 50px;
-        justify-content: space-between;
-        margin-bottom: 60px;
-    }
-
-    &__block1-links {
+        flex-direction: row;
         position: relative;
-        padding-left: 26px;
+    }
+
+    &__buttons {
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        gap: 22px;
-
+        position: relative;
+        padding-left: 60px;
+        margin-top: 50px;
         &::before {
-            content: '';
+            content: "";
+            display: block;
             position: absolute;
-            top: 0;
-            bottom: 0;
+            top: 0px;
             left: 0;
             width: 4px;
+            height: 198px;
             background-color: @red;
+            pointer-events: none;
+            margin-left: 40px;
         }
     }
 
-    &__block1-link {
-        text-decoration: none;
-        font-size: 16px;
-        line-height: 1.3;
+    a {
         font-weight: 600;
+        font-size: 16px;
         color: @black;
-        transition: color 0.2s;
-
+        text-decoration: none;
+        text-decoration-color: @black;
+        transition: text-decoration-color 0.2s;
+        cursor: pointer;
+        margin-bottom: 22px;
         &:hover {
-            @media (hover: hover) {
-                color: @red;
-            }
+          text-decoration-color: transparent;
+          color: @red;
         }
-
-        &:active {
-            color: @red;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 
-    &__block2 {
-        display: grid;
-        grid-template-columns: 1fr 160px 1fr;
-        grid-template-areas:
-            "copyright socials create"
-            "links socials create";
+    &__check {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: 600px;
+        margin-top: 45px;
     }
 
-    &__socials {
-        grid-area: socials;
+    p {
+        font-weight: 600;
+        font-size: 16px;
+        color: @black;
     }
 
-    &__block2-links {
-        grid-area: links;
+    &__field-input {
+        box-sizing: border-box;
+        display: block;
+        width: 270px;
+        border: none;
+        border-radius: 5px;
+        background-color: @white;
+        font-size: 16px;
+        line-height: 1.375;
+        height: 49px;
+        padding-left: 30px;
     }
 
-    &__copyright {
-        grid-area: copyright;
-        margin-bottom: 20px;
-    }
-
-    &__create {
-        grid-area: create;
+    &__btn {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 135px;
+        height: 49px;
+        border: 1px solid @black;
+        background-color: transparent;
+        outline: none;
+        color: @white;
+        background-color: @black;
+        font-family: @font1;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
     }
 }
